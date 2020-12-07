@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.numberpad-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 2rem;
+    background-color: #2196F3;
+    padding: 1rem;
+    overflow: scroll;
+  }
+
+  .numberpad-grid > div{
+    border: 1px solid #ffffff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  }
+
+  .item {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #equal{
+      grid-column: 5/7;
+  }
+  
+  .display {
+    background-color: white;
+    grid-column: 1 / 7;
+    height: 3rem;
+    text-align: right;
+    overflow-x: scroll;
+  }
+  .equal{
+    text-align: center;
+    grid-column: 5/7;
+  }
